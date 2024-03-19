@@ -1,0 +1,230 @@
+import java.util.Scanner;
+public  class Word
+
+{
+  public static void main(String[]args)
+{
+   System.out.println(&quot;***********WORDCROSS************&quot;);
+   System.out.println(&quot;**********LEVEL 1************&quot;);
+   System.out.println(&quot;Enter the 3 possible words from the given
+letters&quot;);
+   System.out.println(&quot;n t i&quot;);
+   Scanner in=new Scanner(System.in);
+   String A[]={&quot;in&quot;,&quot;tin&quot;,&quot;it&quot;};
+   String[] A1=new String[3];
+   int c1=0;
+   for(int i=0;i&lt;3;i++)
+    {
+      A1[i]=in.nextLine();
+     }
+     for(int i=0;i&lt;3;i++)
+     {
+      for(int j=0;j&lt;3;j++)
+      {
+       if(A1[i].equals(A[j]))
+        {
+          c1++;
+        }
+       }
+      }
+       System.out.println(&quot;The score is:&quot;+c1);
+       if(c1==0||c1==1||c1==2)
+        {
+          System.out.println(&quot;************LOST THE
+GAME*****************&quot;);
+          System.out.println(&quot;************BETTER LUCK NEXT
+TIME************&quot;);
+         }
+
+       else
+       {
+       
+ System.out.println(&quot;*********CONGRATULATIONS*********&quot;);
+         System.out.println(&quot;Enter 0 to exit from the game&quot;);
+         System.out.println(&quot;Enter 1 to continue the game&quot; );
+         int a=in.nextInt();
+         if(a==0)
+         {
+          System.out.println(&quot;***********THANKYOU**********&quot;);
+         }
+        if(a==1)
+        {
+         System.out.println(&quot;*****************LEVEL
+3***********&quot;);
+         System.out.println(&quot;Enter the 4 possible words from the given
+letters :&quot;);
+         System.out.println(&quot;r a b g&quot;);   
+         String B[]={&quot;grab&quot;,&quot;bag&quot;,&quot;bar&quot;,&quot;brag&quot;};
+         String[] B1=new String[4];
+         int c2=0; 
+         for(int i=0;i&lt;4;i++)
+         {
+          B1[i]=in.next();
+          }
+          for(int i=0;i&lt;4;i++)
+          {
+           for(int j=0;j&lt;4;j++)
+           {
+            if(B1[i].equals(B[j]))
+            {
+             c2++;
+            }
+           }
+         }
+
+          System.out.println(&quot;The score is:&quot;+c1);
+          if(c2==0||c2==1||c2==2||c2==3)
+           {
+             System.out.println(&quot;************LOST THE
+GAME*****************&quot;);
+             System.out.println(&quot;************BETTER LUCK NEXT
+TIME************&quot;);
+           }
+         else
+          {
+           
+System.out.println(&quot;*********CONGRATULATIONS*********&quot;);
+            System.out.println(&quot;Enter 0 to exit from the game&quot;);
+            System.out.println(&quot;Enter 1 to continue the game&quot; );
+            int b=in.nextInt();
+            if(b==0)
+           {
+            System.out.println(&quot;***********THANKYOU**********&quot;);
+            }
+       if(b==1)
+       {
+        System.out.println(&quot;*************LEVEL 4***********&quot;);
+        System.out.println(&quot;Enter the four words from the given
+letters&quot;);
+        System.out.println(&quot;i r e c p&quot;);   
+        String C[]={&quot;rice&quot;,&quot;ice&quot;,&quot;price&quot;,&quot;pie&quot;};
+        String[] C1=new String[4];
+        int c3=0; 
+        for(int i=0;i&lt;4;i++)
+        {
+         C1[i]=in.next();
+         }
+         for(int i=0;i&lt;4;i++)
+         {
+          for(int j=0;j&lt;4;j++)
+
+          {
+           if(C1[i].equals(C[j]))
+           {
+            c3++;
+           }
+          }
+        }
+         System.out.println(&quot;The score is:&quot;+c3);
+            if(c3==0||c3==1||c3==2||c3==3)
+            {
+              System.out.println(&quot;************LOST THE
+GAME*****************&quot;);
+              System.out.println(&quot;************BETTER LUCK NEXT
+TIME************&quot;);
+             }
+             else
+            {
+             
+System.out.println(&quot;*********CONGRATULATIONS*********&quot;);
+              System.out.println(&quot;Enter 0 to exit from the game&quot;);
+              System.out.println(&quot;Enter 1 to continue the game&quot; );
+              int c=in.nextInt();
+              if(c==0)
+             {
+              System.out.println(&quot;***********THANKYOU**********&quot;);
+              }
+         if(c==1)
+         {
+          System.out.println(&quot;****************LEVEL
+4**************&quot;);
+          System.out.println(&quot;Enter the four possible words from the
+given letters&quot;);
+          System.out.println(&quot;e i k f n&quot;);   
+          String D[]={&quot;ink&quot;,&quot;knife&quot;,&quot;fine&quot;,&quot;kin&quot;};
+          String[] D1=new String[4];
+
+          int c4=0; 
+          for(int i=0;i&lt;4;i++)
+          {
+           D1[i]=in.next();
+           }
+           for(int i=0;i&lt;4;i++)
+           {
+            for(int j=0;j&lt;4;j++)
+            {
+             if(D1[i].equals(D[j]))
+             {
+              c4++;
+             }
+            }
+          }
+           System.out.println(&quot;The score is:&quot;+c4);
+              if(c4==0||c4==1||c4==2||c4==3)
+              {
+                System.out.println(&quot;************LOST THE
+GAME*****************&quot;);
+                System.out.println(&quot;************BETTER LUCK NEXT
+TIME************&quot;);
+               }
+               else
+              {
+               
+System.out.println(&quot;*********CONGRATULATIONS*********&quot;);
+                System.out.println(&quot;Enter 0 to exit from the game&quot;);
+                System.out.println(&quot;Enter 1 to continue the game&quot; );
+                int d=in.nextInt();
+                if(d==0)
+               {
+                System.out.println(&quot;***********THANKYOU**********&quot;);
+                }
+           if(d==1)
+
+           {
+            System.out.println(&quot;************LEVEL 5********&quot;);
+            System.out.println(&quot;Enter the  five possible words from the
+given letters&quot;);
+            System.out.println(&quot;e n c o s&quot;);   
+            String E[]={&quot;one&quot;,&quot;sec&quot;,&quot;cones&quot;,&quot;son&quot;,&quot;once&quot;};
+            String[] E1=new String[5];
+            int c5=0; 
+            for(int i=0;i&lt;5;i++)
+            {
+             E1[i]=in.next();
+             }
+             for(int i=0;i&lt;5;i++)
+             {
+              for(int j=0;j&lt;5;j++)
+              {
+               if(E1[i].equals(E[j]))
+               {
+                c5++;
+               }
+              }
+            }
+             System.out.println(&quot;The score is:&quot;+c5);
+                if(c5==5)
+                {
+                 
+System.out.println(&quot;************CONGRATULATIONS***********
+******&quot;);
+                  System.out.println(&quot;************YOU WON THE
+GAME************&quot;);
+                 }
+                 else
+                {
+                  System.out.println(&quot;********LOST THE
+GAME**********&quot;);
+
+                  System.out.println(&quot;*********BETTER LUCK NEXT
+TIME***********&quot;);
+            }
+   }
+}
+}
+}
+       }
+          }
+          
+        }}
+       }}
